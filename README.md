@@ -24,7 +24,7 @@ Instead of:
 You can do:
 
     <dependency>
-      <groupId>org.elasticsearch</groupId>
+      <groupId>org.renameme</groupId>
       <artifactId>securemock</artifactId>
       <version>1.2</version>
       <scope>test</scope>

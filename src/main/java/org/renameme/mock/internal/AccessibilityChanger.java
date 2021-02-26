@@ -1,4 +1,4 @@
-package org.elasticsearch.mock.internal;
+package org.renameme.mock.internal;
 
 /*
  * Licensed to Elasticsearch under one or more contributor

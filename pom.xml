@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.elasticsearch</groupId>
+  <groupId>org.renameme</groupId>
   <artifactId>securemock</artifactId>
   <version>1.3-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <name>Elasticsearch Securemock</name>
+  <name>Renameme Securemock</name>
   <description>Allows creating mocks in tests without having to grant dangerous permissions to all of your code.</description>
   <inceptionYear>2015</inceptionYear>
 
@@ -22,11 +22,11 @@
     </license>
   </licenses>
 
-  <scm>
+  <!--<scm>
     <connection>scm:git:git@github.com:elastic/securemock.git</connection>
     <developerConnection>scm:git:git@github.com:elastic/securemock.git</developerConnection>
     <url>https://github.com/elastic/securemock</url>
-  </scm>
+  </scm>-->
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -96,50 +96,50 @@
               <relocations>
                 <relocation>
                 <pattern>org.mockito</pattern>
-                <shadedPattern>org.elasticsearch.mock.orig</shadedPattern>
+                <shadedPattern>org.renameme.mock.orig</shadedPattern>
                 <includes>
                   <include>org.mockito.Mockito</include>
                 </includes>
                 </relocation>
 
                 <relocation>
-                <pattern>org.elasticsearch.mock</pattern>
+                <pattern>org.renameme.mock</pattern>
                 <shadedPattern>org.mockito</shadedPattern>
                 <includes>
-                  <include>org.elasticsearch.mock.Mockito*</include>
+                  <include>org.renameme.mock.Mockito*</include>
                 </includes>
                 </relocation>
 
                 <!-- add these replacements -->
                 <relocation>
-                <pattern>org.elasticsearch.mock.internal</pattern>
+                <pattern>org.renameme.mock.internal</pattern>
                 <shadedPattern>org.mockito.internal.creation.cglib</shadedPattern>
                 <includes>
-                  <include>org.elasticsearch.mock.internal.CGLIBHacker*</include>
+                  <include>org.renameme.mock.internal.CGLIBHacker*</include>
                 </includes>
                 </relocation>
 
                 <relocation>
-                <pattern>org.elasticsearch.mock.internal</pattern>
+                <pattern>org.renameme.mock.internal</pattern>
                 <shadedPattern>org.mockito.internal.util.reflection</shadedPattern>
                 <includes>
-                  <include>org.elasticsearch.mock.internal.AccessibilityChanger*</include>
+                  <include>org.renameme.mock.internal.AccessibilityChanger*</include>
                 </includes>
                 </relocation>
 
                 <relocation>
-                <pattern>org.elasticsearch.mock.internal</pattern>
+                <pattern>org.renameme.mock.internal</pattern>
                 <shadedPattern>org.mockito.cglib.core</shadedPattern>
                 <includes>
-                  <include>org.elasticsearch.mock.internal.ReflectUtils*</include>
+                  <include>org.renameme.mock.internal.ReflectUtils*</include>
                 </includes>
                 </relocation>
 
                 <relocation>
-                <pattern>org.elasticsearch.mock.internal</pattern>
+                <pattern>org.renameme.mock.internal</pattern>
                 <shadedPattern>org.mockito.internal.creation.jmock</shadedPattern>
                 <includes>
-                  <include>org.elasticsearch.mock.internal.ClassImposterizer*</include>
+                  <include>org.renameme.mock.internal.ClassImposterizer*</include>
                 </includes>
                 </relocation>
 

@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package org.elasticsearch.mock.internal;
+package org.renameme.mock.internal;
 
 import java.beans.*;
 import java.lang.reflect.*;

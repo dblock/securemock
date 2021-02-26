@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.elasticsearch.mock.internal;
+package org.renameme.mock.internal;
 
 import org.mockito.cglib.core.CodeGenerationException;
 import org.mockito.cglib.core.NamingPolicy;
