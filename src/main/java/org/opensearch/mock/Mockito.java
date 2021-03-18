@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package org.elasticsearch.mock;
+package org.opensearch.mock;
 
 import org.mockito.InOrder;
 import org.mockito.Matchers;

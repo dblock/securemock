@@ -1,4 +1,4 @@
-package org.elasticsearch.mock.internal;
+package org.opensearch.mock.internal;
 
 /*
  * Licensed to Elasticsearch under one or more contributor
